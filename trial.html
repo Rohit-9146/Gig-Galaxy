@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gig Galaxy</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search {
+    padding: 20px;
+    text-align: center;
+}
+
+.search input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.featured-jobs {
+    padding: 20px;
+    text-align: center;
+}
+
+.job-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 20px;
+    display: inline-block;
+    width: calc(30% - 60px);
+}
+
+.applyBtn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .job-card {
+        width: calc(45% - 60px);
+    }
+}
+
+@media (max-width: 480px) {
+    .job-card {
+        width: calc(100% - 60px);
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">Gig Galaxy</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Freelancers</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search">
+            <input type="text" placeholder="Search for jobs or freelancers...">
+            <button>Search</button>
+        </section>
+
+        <section class="featured-jobs">
+            <h2>Featured Jobs</h2>
+            <div class="job-card">
+                <h4>Web Developer</h4>
+                <p>Remote - $30/hr</p>
+                <p>Looking for an experienced web developer to build a website.</p>
+                <button class="applyBtn">Apply</button>
+            </div>
+            <div class="job-card">
+                <h4>Graphic Designer</h4>
+                <p>Remote - $25/hr</p>
+                <p>Need a creative graphic designer for ongoing projects.</p>
+                <button class="applyBtn">Apply</button>
+            </div>
+            <div class="job-card">
+                <h4>Content Writer</h4>
+                <p>Remote - $20/hr</p>
+                <p>Seeking a content writer for blog posts and articles.</p>
+                <button class="applyBtn">Apply</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gig Galaxy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const applyButtons = document.querySelectorAll('.applyBtn');
+applyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Application process coming soon!');
+    });
+});
+
+    </script>
+</body>
+</html>

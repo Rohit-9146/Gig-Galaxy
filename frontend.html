@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gig Galaxy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Basic styling for the header and navigation */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+<script>
+    import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Components
+function Header() {
+  return (
+    <header>
+      <h1>Gig Galaxy</h1>
+      {/* ... navigation, search, etc. */}
+    </header>
+  );
+}
+
+function GigList() {
+  // ... logic to fetch and display gigs
+  return (
+    <div>
+      {/* List of gigs */}
+    </div>
+  );
+}
+
+// Main app component
+function App() {
+  return (
+    <div>
+      <Header />
+      <GigList />
+    </div>
+  );
+}
+
+// Render the app
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+<body>
+    <header>
+        <h1>Gig Galaxy</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Gigs</a></li>
+                <li><a href="#">Freelancers</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></scrip>
+</body>
+</html>
